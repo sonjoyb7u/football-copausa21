@@ -380,14 +380,23 @@
                 height: 850px;
             }
             .navbar {
+                flex-direction: row;
                 justify-content: space-between;
-                margin: 0 20px;
+                align-items: baseline;
+                margin: 0 15px;
             }
             .menus ul {
                 display: none;
             }
             .menus i {
                 display: block;
+            }
+            .menus i ul {
+                display: none;
+            }
+            .menus i:hover ul {
+                display: block;
+                background-color: #ccc;
             }
             .banner-heading {
                 width: 445px;
@@ -427,11 +436,17 @@
             }
             .subscribe-form {
                 margin: 0;
-                padding: 10px;
+                padding: 25px;
             }
             .subscribe-form input[type=email] {
-                width: 65%;
+                width: 80%;
                 padding: 10px;
+            }
+            .subscribe-form a {
+                background-image: linear-gradient(to right, #61b4f8, #E02C6D);
+                padding: 8px 20px;
+                border: none;
+                border-radius: 20px;
             }
             /* Footer Section */
             .footer-content > a > img {
@@ -445,19 +460,58 @@
             End Mobile Device Styles Section
     /* ---------------------------------------*/
 
-        /* ---------------------------------------*\
-            Start Tablet Device Styles Section
-        /* ---------------------------------------*/
-            /* Navbar Menu with Banner Section */
-            @media only screen and (min-width: 688px) and (max-width: 992px)  {
-                #header {
-                    height: 850px;
-                }
+    /* ---------------------------------------*\
+        Start Tablet Device Styles Section
+    /* ---------------------------------------*/
+        /* Navbar Menu with Banner Section */
+        @media only screen and (min-width: 688px) and (max-width: 992px)  {
+            #header {
+                height: 1050px;
             }
+            .navbar {
+                padding-top: 30px;
+            }
+            .menus ul li {
+                margin-right: 15px;
+                padding: 8px;
+            }
+            .banner-info {
+                margin-left: 0px;
+            }
+            .banner-heading {
+                font-size: 50px;
+            }
+            .banner-image img {
+                margin-top: 60px;
+                width: 98%;
+                padding: 15px;
+            }
+        /* Main Section */
+            /* Top Most Players Section */
+            .players {
+                max-width: 90%;
+                grid-template-columns: repeat(2, 1fr);
+                margin: 0 auto 80px;
+            }
+            a.load-more-btn {
+                width: 20%;
+            }
+            /* Breaking News Tube Section */
+            .break-news-tubes > h2 {
+                width: 54%;
+            }
+            .tube-galleries {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            /* Get In Touch or Subscribe Section */
+            .get-in-touch h2 {
+                width: 35%;
+            }
+    }
 
-        /* ---------------------------------------*\
-            Start Tablet Device Styles Section
-        /* ---------------------------------------*/
+    /* ---------------------------------------*\
+        Start Tablet Device Styles Section
+    /* ---------------------------------------*/
 
 /* ---------------------------------------*\
     End Media Query Styles Section
