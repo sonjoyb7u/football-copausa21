@@ -397,6 +397,7 @@
             .menus i:hover ul {
                 display: block;
                 background-color: #ccc;
+                position: absolute;
             }
             .banner-heading {
                 width: 445px;
