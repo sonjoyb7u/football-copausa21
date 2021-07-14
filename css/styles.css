@@ -55,6 +55,12 @@
         padding: 0;
         
     }
+    .menus i {
+        display: none;
+        font-size: 24px;
+        color: #fff;
+        font-weight: 600;
+    }
     .menus ul li {
         margin-right: 25px;
         padding: 10px;
@@ -359,6 +365,45 @@
         text-transform: capitalize;
     }
 /* ---------------------------------------*\
-    Start Footer Styles Section
+    End Footer Styles Section
+/* ---------------------------------------*/
+
+/* ---------------------------------------*\
+    Start Media Query Styles Section
+/* ---------------------------------------*/
+
+    /* ---------------------------------------*\
+            Start Mobile Device Styles Section
+    /* ---------------------------------------*/
+        /* Navbar Menu with Banner Section */
+        @media only screen and (max-width: 688px) {
+            #header {
+                height: 850px;
+            }
+            .navbar {
+                justify-content: space-between;
+                margin: 0 20px;
+            }
+            .menus ul {
+                display: none;
+            }
+            .menus i {
+                display: block;
+            }
+            .banner-heading {
+                width: 445px;
+            }
+            .banner-image img {
+                margin-top: 50px;
+                width: 94%;
+                padding: 17px;
+            }
+        }
+    /* ---------------------------------------*\
+            End Mobile Device Styles Section
+    /* ---------------------------------------*/
+
+/* ---------------------------------------*\
+    End Footer Styles Section
 /* ---------------------------------------*/
 
